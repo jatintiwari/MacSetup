@@ -36,6 +36,12 @@ cask "clipy"
 
 cask "koekeishiya/formulae/skhd"
 touch $HOME/.skhdrc
+echo $HOME/.skhdrc > "alt - 2 : open -a /Applications/Google\ Chrome.app/
+alt - 3 : open -a /Applications/Visual\ Studio\ Code.app/
+alt - 4 : open -a /Applications/iTerm.app/%"
+
+
+
 
 vscode "42crunch.vscode-openapi"
 vscode "aaron-bond.better-comments"
