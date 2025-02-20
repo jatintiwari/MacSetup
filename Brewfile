@@ -16,7 +16,11 @@ brew "jenv"
 brew "jq"
 # brew "mariadb@10.6", restart_service: true
 # brew "nginx", restart_service: true
+
 brew "nvm"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 # brew "openjdk@11"
 # brew "openjdk@17"
 brew "pcre"
@@ -29,6 +33,10 @@ cask "postman"
 #cask "mattermost"
 cask "logi-options+"
 cask "clipy"
+
+cask "koekeishiya/formulae/skhd"
+touch $HOME/.skhdrc
+
 vscode "42crunch.vscode-openapi"
 vscode "aaron-bond.better-comments"
 vscode "adpyke.codesnap"
@@ -108,3 +116,5 @@ vscode "yzhang.markdown-all-in-one"
 vscode "zainsra.automate-react"
 vscode "zhuangtongfa.material-theme"
 vscode "zignd.html-css-class-completion"
+
+touch $HOME/.skhdrc
